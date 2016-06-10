@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <doclet-version-NOT-library-version>1.04</doclet-version-NOT-library-version>
+    <class>
+        <name>com.salvadorjhai.itextg.HtmlToPDF</name>
+        <shortname>HtmlToPDF</shortname>
+        <owner>process</owner>
+        <method>
+            <name>convert2</name>
+            <comment>Convert given XHTML to PDF using iTextG Library (www.itextpdf.com)
+ Use this sub if your xhtml contains Base64 image src
+xHtml: 
+outputPath: 
+outputFilename: </comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>xHtml</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>outputPath</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>outputFilename</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+        <method>
+            <name>convert</name>
+            <comment>Convert given XHTML to PDF using iTextG Library (www.itextpdf.com)
+xHtml: - XHTML Source
+outputPath: - PDF output file path
+outputFilename: - PDF output filename</comment>
+            <returntype>void</returntype>
+            <parameter>
+                <name>xHtml</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>outputPath</name>
+                <type>java.lang.String</type>
+            </parameter>
+            <parameter>
+                <name>outputFilename</name>
+                <type>java.lang.String</type>
+            </parameter>
+        </method>
+    </class>
+    <version>1.0</version>
+    <author>Jhai Salvador</author>
+    <dependsOn>itextg</dependsOn>
+    <dependsOn>xmlworker</dependsOn>
+</root>
